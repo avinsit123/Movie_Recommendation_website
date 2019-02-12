@@ -15,6 +15,16 @@ $docker run -d -p 5000:5000 Movie_recco
 ```
 Open http://0.0.0.0:5000/ to start the web application and start using it.
 
+## Approach Followed
+I have intended to examine Movie recommender systems through different methods mainly User-User Collaborative Filtering,Item-Item Collaborative Filtering and Rank Matrix factorization 
+
+## Dependencies
+<ul>
+<li>Numpy,Pandas to help with all the Numerical Calculations and datasets manipulations.</li>
+<li>Pymongo to connect with online Mongo Atlas Cluster and retreive and add information to it.</li>
+<li>WhiteNoise to help web app to serve its own static files and make external deployment on Heroku easy.</li>
+<li>Gunicorn to help with web app deployment and setting up an external web server on Heroku.</li>
+</ul>
 ## Directory Structure
 ```terminal
 .
@@ -54,4 +64,3 @@ Open http://0.0.0.0:5000/ to start the web application and start using it.
   <li><h4>Dockerfile</h4> File to help Docker hub build a Docker Image</li>
 </ol>
 
-## 
