@@ -26,6 +26,7 @@ I have intended to examine Movie recommender systems through different methods m
 <li>Gunicorn to help with web app deployment and setting up an external web server on Heroku.</li>
 </ul>
 ## Directory Structure
+
 ```terminal
 .
 ├── Dockerfile
