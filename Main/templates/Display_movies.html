@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Movies</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <link rel="stylesheet" href="{{ url_for('static', filename='movie_beauty.css') }}">
+</head>
+<body style="background-color:rgb(0, 0, 255)">
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<section class="our-webcoderskull padding-lg">
+  <div class="container">
+    <div class="row heading heading-icon">
+        <h2>Movie Recommendation System</h2>
+    </div>
+      <form method="POST" action="{{ url_for('recommend') }}">
+    <ul class="row">
+    {% for movie in display_list %}
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" >
+            <figure><img src={{movie.img_link}} class="img-responsive" alt="Father of the Bride Part II"></figure>
+            <h3><a href={{movie.source_link}}>{{movie.Name}}</a></h3>
+            <p>{{movie.Overview}}</p>
+               
+Pls rate this movie...
+
+               <select name={{movie.movieid}} required="True">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+                    <option value="5">5</option>
+  </select>
+
+          
+          </div>
+      </li>
+      {% endfor %}
+         <li class="col-48 col-md-24 col-lg-12">
+             <div class="cnt-block equal-height">
+         We provide 3 methods of recommendation:-
+             <ol>
+                 <li>User-User Based Collaborative Filtering</li>
+                 <li>Item-Item Based Collaborative Filtering</li>
+                 <li>Rank Matrix Factorization</li>
+             </ol>
+                 <br><br>  
+         <select class="hey" name="recco_method" required="True">
+    <option value="uucf">User-User Based Collaborative filtering</option>
+    <option selected value="iicf">Item-Item Based Collaborative filtering</option>
+    <option value="rf">Rank Matrix Factorization Method</option>
+         </select>
+         <br><br>
+         <div>
+                                        <button class="btn btn-lg btn-outline-success btn-lg" type="submit">Recommend me</button>
+          </div>
+          </div>
+      </li>
+    </ul>
+          </form>
+  </div>
+</section>
+</body>
+</html>

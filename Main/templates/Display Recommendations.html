@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommendations</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="{{ url_for('static', filename='movie_beauty.css') }}">
+
+</head>
+<body style="background-color:rgb(0, 255, 0)">
+
+<section class="our-webcoderskull padding-lg">
+  <div class="container">
+    <div class="row heading heading-icon">
+        <h2>Some of your recommended Movies are</h2>
+    </div>
+
+      <form  action="{{ url_for('index') }}">
+    <div class="container-fluid">
+   <div class="col-sm-12 text-center">
+        <button class="btn btn-lg btn-block btn-outline-primary" type="submit">Go back to the Home Page</button>
+        </div>
+ </div>
+        </form>
+
+    <ul class="row">
+        {% for movie in movie_details %}
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" >
+            <figure><img src={{movie.img_link}} class="img-responsive" alt="{{movie.Name}}"></figure>
+            <h3><a href={{movie.source_link}}>{{movie.Name}}</a></h3>
+              <p>{{movie.Overview}}</p>
+  </select>
+          </div>
+      </li>
+        {% endfor %}
+    </ul>
+        <form  action="{{ url_for('index') }}">
+    <div class="container-fluid">
+   <div class="col-sm-12 text-center">
+        <button class="btn btn-lg btn-block btn-outline-primary" type="submit">Go back to the Home Page</button>
+        </div>
+ </div>
+        </form>
+<body>
+
+</body>
+</html>
