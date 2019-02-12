@@ -67,6 +67,7 @@ I have intended to examine Movie recommender systems through different methods m
 </ol>
 
 ## References 
+
 <ol>
   <li> <a href="">Bootsnip</a> : In order to get a rough Idea on how to design UI for the Website</li>
   <li> University of Minnesota's Course on <a href="https://www.coursera.org/specializations/recommender-systems">Recommender Systems</a> </li>
