@@ -1,5 +1,6 @@
 # Precog_Intern_Assignment
 
+You can see the website at work on https://stormy-lake-61586.herokuapp.com .
 ## Running the Application locally
 In order to run the application locally you need to have Docker installed on your local system.Type
 ```terminal
