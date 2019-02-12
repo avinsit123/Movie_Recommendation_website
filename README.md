@@ -25,6 +25,7 @@ I have intended to examine Movie recommender systems through different methods m
 <li>WhiteNoise to help web app to serve its own static files and make external deployment on Heroku easy.</li>
 <li>Gunicorn to help with web app deployment and setting up an external web server on Heroku.</li>
 </ul>
+
 ## Directory Structure
 
 ```terminal
