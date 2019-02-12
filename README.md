@@ -11,8 +11,8 @@ After Downloading,copy the below given instructions to run the application local
 ```terminal 
 $git clone https://github.com/avinsit123/Precog_Intern_Assignment.git
 $cd Precog_Intern_Assignment
-$docker build -t Movie_recco .
-$docker run -d -p 5000:5000 Movie_recco
+$docker build -t movie_recco .
+$docker run -d -p 5000:5000 movie_recco
 ```
 Open http://0.0.0.0:5000/ to start the web application and start using it.
 
