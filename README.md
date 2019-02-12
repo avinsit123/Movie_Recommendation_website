@@ -17,7 +17,8 @@ $docker run -d -p 5000:5000 movie_recco
 Open http://0.0.0.0:5000/ to start the web application and start using it.
 
 ## Approach Followed
-I have intended to examine Movie recommender systems through different methods mainly User-User Collaborative Filtering,Item-Item Collaborative Filtering and Rank Matrix factorization 
+I have intended to examine Movie recommender systems through different methods mainly User-User Collaborative Filtering,Item-Item Collaborative Filtering and Rank Matrix factorization.In order for these algorithms to work there needs to be previous users and movies already.I have taken the first 46 users as reference and have stored the movies having movied<=300 in the database.These movies and users belong to the MovieLens Dataset.We build a rating corresponding to these entries by using the <a href="">Ratings.csv</a> file where all these ratings are mentioned.The Ratings entered by the user are pasted onto the 47th Column of the Matrix(as he is 47th user) and all 3 methods mentioned above are conducted on the rating matrix.
+        
 
 ## Dependencies
 <ul>
