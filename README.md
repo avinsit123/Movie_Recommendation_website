@@ -1,6 +1,19 @@
 # Precog_Intern_Assignment
 
 ## Running the Application locally
+In order to run the application locally you need to have Docker installed on your local system.Type
+```terminal
+docker --version
+```
+If you get Docker version 18.09.1, build 4c52b90 ,then Docker is installed otherwise go to <a href="https://docs.docker.com/docker-for-mac/install/">this link</a> to install Docker Desktop
+After Downloading,copy the below given instructions to run the application locally.
+```terminal 
+$git clone https://github.com/avinsit123/Precog_Intern_Assignment.git
+$cd Precog_Intern_Assignment
+$docker build -t Movie_recco .
+$docker run -d -p 5000:5000 Movie_recco
+```
+Open http://0.0.0.0:5000/ to start the web application and start using it.
 
 ## Directory Structure
 ```terminal
