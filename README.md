@@ -1,8 +1,11 @@
 # Precog_Intern_Assignment
 
+## Running the Application locally
+
 ## Directory Structure
 ```terminal
 .
+├── Dockerfile
 ├── Main
 │   ├── Database_connector.py
 │   ├── Externals
@@ -18,7 +21,7 @@
 │   │   ├── graeat.js
 │   │   └── movie_beauty.css
 │   ├── templates
-│   │   ├── Display Recommendations.html
+│   │   ├── Display\ Recommendations.html
 │   │   └── Display_movies.html
 │   └── wsgi.py
 ├── Procfile
@@ -35,6 +38,7 @@
   <li> <h4>Externals</h4>  Contains Ratings.csv which has all the ratings of the dummy users and their ratings.We have taken the first 46 users and first 300 movies.</li>
   <li> <h4>Database_connector.py</h4> This script helps in fetching data from MongoDB database given a list of movies and packaging it in the form of a class and returning this class.</li>
   <li> <h4>Recommending functions</h4> Contains all the functions for performing rank-matrix factorization,user-user and item-item collaborative filtering </li>
+  <li><h4>Dockerfile</h4> File to help Docker hub build a Docker Image</li>
 </ol>
 
 ## 
