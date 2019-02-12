@@ -66,3 +66,10 @@ I have intended to examine Movie recommender systems through different methods m
   <li><h4>Dockerfile</h4> File to help Docker hub build a Docker Image</li>
 </ol>
 
+## References 
+<ol>
+  <li> <a href="">Bootsnip</a> : In order to get a rough Idea on how to design UI for the Website</li>
+  <li> University of Minnesota's Course on <a href="https://www.coursera.org/specializations/recommender-systems">Recommender Systems</a> </li>
+  <li><a href="https://github.com/rmotr-curriculum/flask-heroku-example/blob/master/Procfile">Flask Tutorials</a> </li>
+    
+  </ol>
