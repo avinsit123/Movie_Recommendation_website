@@ -18,7 +18,11 @@ Open http://0.0.0.0:5000/ to start the web application and start using it.
 
 ## Approach Followed
 I have intended to examine Movie recommender systems through different methods mainly User-User Collaborative Filtering,Item-Item Collaborative Filtering and Rank Matrix factorization.In order for these algorithms to work there needs to be previous users and movies already.I have taken the first 46 users as reference and have stored the movies having movied<=300 in the database.These movies and users belong to the MovieLens Dataset.We build a rating corresponding to these entries by using the <a href="">Ratings.csv</a> file where all these ratings are mentioned.The Ratings entered by the user are pasted onto the 47th Column of the Matrix(as he is 47th user) and all 3 methods mentioned above are conducted on the rating matrix.
-        
+<br>
+The movies database consists of 300 movies.We take ratings of 12 movies from the user(roughly 5%) and use these ratings to predict ratings of the movies.The top 12 movies having the highest ratings are displayed to the user.
+
+#### Reason for choosing 12 movies
+Choosing the number of movies to be displayed invloves a tradeoff between server loading time and accuracy of dataset.Lower amount of movies displayed means a sparse rating matrix but a faster loading time.A large number of movies means denser matric,greater accuracy but larger server loading time(As it needs to make connection with MongoDB Atlas Cluster and read data from it).After testing out optimal values,I arrived on the value of 12 movies.
 
 ## Dependencies
 <ul>
